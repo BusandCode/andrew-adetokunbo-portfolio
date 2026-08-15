@@ -49,13 +49,14 @@ export const projects: Project[] = [
     stack: ["Next.js", "Sanity", "Framer Motion"],
     link: "https://hurkify-technology-limited.vercel.app/",
   },
-  {
+ {
     slug: "edamaa",
     name: "Edamaa",
     tagline: "Educational Tutoring Platform",
     description:
-      "A tutoring platform connecting students with tutors and learning resources in one place — students can access educational content, interact with tutors, ask questions, and participate in discussions.",
+      "Interactive learning platform combining educational videos, topic-based discussions, and live Q&A with verified tutors — students can ask questions at specific points in a video and get answers directly. Built the responsive, user-friendly frontend, translating product requirements and designs into accessible, usable web experiences.",
     stack: ["React", "TypeScript"],
+    link: "https://edamaa.vercel.app/",
   },
 ];
 

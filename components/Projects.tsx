@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/lib/data";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -19,7 +20,7 @@ export default function Projects() {
         >
           <span className="text-[13px] font-bold uppercase tracking-widest text-primary">Selected Work</span>
           <h2 className="mt-3 text-[32px] font-extrabold leading-tight tracking-tight text-ink sm:text-[38px]">
-            Four products, built end to end.
+            Products I&apos;ve worked on.
           </h2>
         </motion.div>
 
@@ -42,14 +43,14 @@ export default function Projects() {
                   ))}
                 </div>
                 {p.link && (
-                  <a
+                  <Link
                     href={p.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex w-fit items-center gap-1 border-b border-ink/15 pb-0.5 text-[13px] font-bold text-ink transition-colors hover:border-primary hover:text-primary"
                   >
                     Live site <ArrowUpRight className="h-3.5 w-3.5" />
-                  </a>
+                  </Link>
                 )}
               </Card>
             </motion.div>
