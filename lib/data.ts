@@ -49,7 +49,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "Sanity", "Framer Motion"],
     link: "https://hurkify-technology-limited.vercel.app/",
   },
- {
+  {
     slug: "edamaa",
     name: "Edamaa",
     tagline: "Educational Tutoring Platform",
@@ -72,21 +72,21 @@ export const jobs: Job[] = [
     ],
   },
   {
-    title: "Frontend Developer",
-    company: "Hurkify Technology Limited",
-    dates: "Dec 2025 – Present",
-    points: [
-      "Translate Figma designs into fully responsive web and mobile interfaces; build reusable UI component systems.",
-      "Contribute to Edamaa, a React/TypeScript tutor-facing tutoring platform — UI, animation, and responsiveness.",
-    ],
-  },
-  {
     title: "Software Engineer Intern",
     company: "Crediometer",
     dates: "Apr 2026 – Present",
     points: [
       "Build responsive web interfaces and develop mobile features in Kotlin, including NFC payment and voice payment.",
       "Assist in preparing Software Requirement Specifications (SRS) and technical documentation.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company: "Hurkify Technology Limited",
+    dates: "Dec 2025 – Present",
+    points: [
+      "Translate Figma designs into fully responsive web and mobile interfaces; build reusable UI component systems.",
+      "Contribute to Edamaa, a React/TypeScript tutor-facing tutoring platform — UI, animation, and responsiveness.",
     ],
   },
   {

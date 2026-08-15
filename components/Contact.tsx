@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
-import { Mail, Github, CheckCircle2 } from "lucide-react";
+import { Mail, Github, Linkedin, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -49,20 +50,28 @@ export default function Contact() {
             Have something to build?
           </h2>
           <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-ink-soft">
-            Send a message and I'll get back to you directly — or reach out on GitHub.
+            Send a message and I'll get back to you directly — or reach out on GitHub or LinkedIn.
           </p>
           <div className="mt-8 flex flex-col gap-4">
-            <a href="mailto:adetokunboandrew2@gmail.com" className="flex items-center gap-3 text-[14.5px] font-semibold text-ink hover:text-primary">
+            <Link href="mailto:adetokunboandrew2@gmail.com" className="flex items-center gap-3 text-[14.5px] font-semibold text-ink hover:text-primary">
               <Mail className="h-4 w-4" /> adetokunboandrew2@gmail.com
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/BusandCode"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-[14.5px] font-semibold text-ink hover:text-primary"
             >
               <Github className="h-4 w-4" /> github.com/BusandCode
-            </a>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/andrew-adetokunbo/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-[14.5px] font-semibold text-ink hover:text-primary"
+            >
+              <Linkedin className="h-4 w-4" /> linkedin.com/in/andrew-adetokunbo
+            </Link>
           </div>
         </motion.div>
 
